@@ -1,0 +1,54 @@
+Oct 03 01:32:47.410 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Oct 03 01:32:47.410 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59577.
+Oct 03 01:32:47.420 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 03 01:32:47.420 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips 
+Oct 03 01:32:47.420 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips
+Oct 03 01:32:47.420 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips/89891593-ef46-44af-994b-5340c9e6a98a 
+Oct 03 01:32:47.421 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips/89891593-ef46-44af-994b-5340c9e6a98a
+Oct 03 01:32:47.421 HYPERVISOR: exec_cmd: vm create R3 3 c7200 
+Oct 03 01:32:47.421 VM: VM R3 created.
+Oct 03 01:32:47.421 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5018 
+Oct 03 01:32:47.421 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Oct 03 01:32:47.422 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 03 01:32:47.422 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Oct 03 01:32:47.422 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Oct 03 01:32:47.423 HYPERVISOR: exec_cmd: vm set_ios R3 /home/fabri/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image 
+Oct 03 01:32:47.423 HYPERVISOR: exec_cmd: c7200 set_mac_addr R3 ca03.1759.0000 
+Oct 03 01:32:47.424 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Oct 03 01:32:47.424 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Oct 03 01:32:47.424 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 03 01:32:47.424 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 0 0 
+Oct 03 01:32:47.425 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 03 01:32:47.425 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-GE-E 
+Oct 03 01:32:47.425 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 03 01:32:47.425 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-GE 
+Oct 03 01:32:47.426 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 03 01:32:47.426 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 PA-GE 
+Oct 03 01:32:47.426 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 03 01:32:47.426 HYPERVISOR: exec_cmd: vm slot_add_binding R3 3 0 PA-GE 
+Oct 03 01:32:47.427 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5018 
+Oct 03 01:32:47.597 HYPERVISOR: exec_cmd: nio create_udp udp-aabd87cd-7dc2-438f-b228-b95d4e6b465b 10064 127.0.0.1 10065 
+Oct 03 01:32:47.624 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-aabd87cd-7dc2-438f-b228-b95d4e6b465b 
+Oct 03 01:32:47.625 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 03 01:32:47.732 HYPERVISOR: exec_cmd: nio create_udp udp-14b7237b-90c0-4728-87f7-7ff756d50feb 10070 127.0.0.1 10071 
+Oct 03 01:32:47.734 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-14b7237b-90c0-4728-87f7-7ff756d50feb 
+Oct 03 01:32:47.734 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 03 01:32:47.788 HYPERVISOR: exec_cmd: nio create_udp udp-66a66519-63fe-4126-88d5-63176872425e 10074 127.0.0.1 10075 
+Oct 03 01:32:47.790 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 2 0 udp-66a66519-63fe-4126-88d5-63176872425e 
+Oct 03 01:32:47.792 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 03 01:32:47.860 HYPERVISOR: exec_cmd: nio create_udp udp-32fc85d7-1c62-4d37-8450-4c605bb381f2 10078 127.0.0.1 10079 
+Oct 03 01:32:47.862 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 3 0 udp-32fc85d7-1c62-4d37-8450-4c605bb381f2 
+Oct 03 01:32:47.862 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 03 01:33:38.203 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Oct 03 01:33:38.203 VM: VM Ghost created.
+Oct 03 01:33:38.204 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/fabri/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image 
+Oct 03 01:33:38.204 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 03 01:33:38.205 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost '/home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips/c7200-adventerprisek9-mz.124-24.T5.image-512.ghost' 
+Oct 03 01:33:38.205 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 03 01:33:38.417 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Oct 03 01:33:38.429 HYPERVISOR: exec_cmd: vm start R3 
+Oct 03 01:34:28.490 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 03 01:54:11.383 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 03 01:54:11.383 HYPERVISOR: exec_cmd: vm stop R3 
+Oct 03 01:54:11.643 VM: VM R3 shutdown.
+Oct 03 01:54:11.644 HYPERVISOR: exec_cmd: vm extract_config R3 

@@ -1,0 +1,44 @@
+Sep 18 20:36:42.683 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Sep 18 20:36:42.683 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49735.
+Sep 18 20:36:42.695 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 18 20:36:42.695 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips 
+Sep 18 20:36:42.695 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips
+Sep 18 20:36:42.695 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips/89891593-ef46-44af-994b-5340c9e6a98a 
+Sep 18 20:36:42.695 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips/89891593-ef46-44af-994b-5340c9e6a98a
+Sep 18 20:36:42.696 HYPERVISOR: exec_cmd: vm create R3 3 c7200 
+Sep 18 20:36:42.696 VM: VM R3 created.
+Sep 18 20:36:42.696 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5034 
+Sep 18 20:36:42.697 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Sep 18 20:36:42.697 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 20:36:42.697 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Sep 18 20:36:42.698 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Sep 18 20:36:42.699 HYPERVISOR: exec_cmd: vm set_ios R3 /home/fabri/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image 
+Sep 18 20:36:42.699 HYPERVISOR: exec_cmd: c7200 set_mac_addr R3 ca03.1759.0000 
+Sep 18 20:36:42.700 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Sep 18 20:36:42.700 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Sep 18 20:36:42.701 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 20:36:42.701 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 0 0 
+Sep 18 20:36:42.701 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 20:36:42.702 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-GE-E 
+Sep 18 20:36:42.702 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 20:36:42.702 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-GE 
+Sep 18 20:36:42.703 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 20:36:42.703 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 PA-GE 
+Sep 18 20:36:42.703 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 20:36:42.704 HYPERVISOR: exec_cmd: vm slot_add_binding R3 3 0 PA-GE 
+Sep 18 20:36:42.820 HYPERVISOR: exec_cmd: nio create_udp udp-a32b9191-9198-4212-94b3-cee8c12003fe 10002 127.0.0.1 10003 
+Sep 18 20:36:42.844 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-a32b9191-9198-4212-94b3-cee8c12003fe 
+Sep 18 20:36:42.844 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 20:36:42.951 HYPERVISOR: exec_cmd: nio create_udp udp-d165f573-1f15-40ab-b798-787d42028d49 10008 127.0.0.1 10009 
+Sep 18 20:36:42.953 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-d165f573-1f15-40ab-b798-787d42028d49 
+Sep 18 20:36:42.953 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 20:36:43.008 HYPERVISOR: exec_cmd: nio create_udp udp-b8e3c792-8719-47bd-84c4-21768e719c98 10012 127.0.0.1 10013 
+Sep 18 20:36:43.009 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 2 0 udp-b8e3c792-8719-47bd-84c4-21768e719c98 
+Sep 18 20:36:43.010 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 20:36:43.110 HYPERVISOR: exec_cmd: nio create_udp udp-af45f6b1-d915-45cc-80a3-96f1f5a15944 10016 127.0.0.1 10017 
+Sep 18 20:36:43.112 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 3 0 udp-af45f6b1-d915-45cc-80a3-96f1f5a15944 
+Sep 18 20:36:43.112 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 21:23:04.259 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 21:23:04.333 HYPERVISOR: exec_cmd: vm extract_config R3 
+Sep 18 23:35:54.552 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 18 23:35:54.553 HYPERVISOR: exec_cmd: vm extract_config R3 

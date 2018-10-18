@@ -1,0 +1,27 @@
+Sep 18 20:36:42.524 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Sep 18 20:36:42.524 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41479.
+Sep 18 20:36:42.530 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 18 20:36:42.530 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips 
+Sep 18 20:36:42.530 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips
+Sep 18 20:36:42.530 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips/1aa058f5-4b1d-49b7-a791-bc38b497b03b 
+Sep 18 20:36:42.530 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips/1aa058f5-4b1d-49b7-a791-bc38b497b03b
+Sep 18 20:36:42.531 HYPERVISOR: exec_cmd: vm create R1 1 c3725 
+Sep 18 20:36:42.531 VM: VM R1 created.
+Sep 18 20:36:42.531 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5031 
+Sep 18 20:36:42.532 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+Sep 18 20:36:42.532 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Sep 18 20:36:42.533 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 18 20:36:42.533 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60c09aa0 
+Sep 18 20:36:42.561 HYPERVISOR: exec_cmd: vm set_ios R1 /home/fabri/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Sep 18 20:36:42.561 HYPERVISOR: exec_cmd: c3725 set_mac_addr R1 c201.1fc4.0000 
+Sep 18 20:36:42.562 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Sep 18 20:36:42.908 HYPERVISOR: exec_cmd: nio create_udp udp-775cf176-8f05-40ba-bb84-9226b5a91b79 10006 127.0.0.1 10007 
+Sep 18 20:36:42.932 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-775cf176-8f05-40ba-bb84-9226b5a91b79 
+Sep 18 20:36:42.932 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 18 20:36:43.806 HYPERVISOR: exec_cmd: nio create_udp udp-ac654685-959d-4b3b-ab51-2f3a92365429 10042 127.0.0.1 10043 
+Sep 18 20:36:43.807 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-ac654685-959d-4b3b-ab51-2f3a92365429 
+Sep 18 20:36:43.808 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 18 21:23:04.040 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 18 21:23:04.078 HYPERVISOR: exec_cmd: vm extract_config R1 
+Sep 18 23:35:54.378 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 18 23:35:54.379 HYPERVISOR: exec_cmd: vm extract_config R1 

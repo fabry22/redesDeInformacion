@@ -1,0 +1,5 @@
+Start QEMU with /usr/bin/qemu-system-x86_64 -name R4 -m 128M -smp cpus=1 -enable-kvm -machine smm=off -boot order=c -drive 'file=/home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/qemu/5a53cf33-0f7b-4699-aac7-002e9fa9501d/hda_disk.qcow2,if=virtio,index=0,media=disk' -uuid 5a53cf33-0f7b-4699-aac7-002e9fa9501d -serial telnet:127.0.0.1:5012,server,nowait -monitor tcp:127.0.0.1:42763,server,nowait -net none -device virtio-net-pci,mac=0c:36:61:55:cf:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10011,localaddr=127.0.0.1:10010 -device virtio-net-pci,mac=0c:36:61:55:cf:01,netdev=gns3-1 -netdev socket,id=gns3-1,udp=127.0.0.1:10013,localaddr=127.0.0.1:10012 -nographic
+
+Execution log:
+qemu-system-x86_64: warning: host doesn't support requested feature: CPUID.80000001H:ECX.svm [bit 2]
+qemu-system-x86_64: terminating on signal 15 from pid 3626 (/usr/share/gns3/gns3-server/bin/python)

@@ -1,0 +1,81 @@
+Oct 02 16:46:47.347 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Oct 02 16:46:47.347 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59351.
+Oct 02 16:46:47.357 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 02 16:46:47.357 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips 
+Oct 02 16:46:47.358 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips
+Oct 02 16:46:47.358 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips/99db3d4c-3f3a-4c7a-88bc-476137791308 
+Oct 02 16:46:47.358 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips/99db3d4c-3f3a-4c7a-88bc-476137791308
+Oct 02 16:46:47.358 HYPERVISOR: exec_cmd: vm create R5 2 c3725 
+Oct 02 16:46:47.358 VM: VM R5 created.
+Oct 02 16:46:47.359 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5032 
+Oct 02 16:46:47.359 HYPERVISOR: exec_cmd: c3725 get_mac_addr R5 
+Oct 02 16:46:47.360 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Oct 02 16:46:47.360 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 16:46:47.360 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x60c09aa0 
+Oct 02 16:46:47.361 HYPERVISOR: exec_cmd: vm set_ios R5 /home/fabri/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Oct 02 16:46:47.362 HYPERVISOR: exec_cmd: c3725 set_mac_addr R5 c202.1fd3.0000 
+Oct 02 16:46:47.362 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Oct 02 16:46:47.903 HYPERVISOR: exec_cmd: nio create_udp udp-410da1e0-2893-40dc-84a8-a54c35635d7e 10010 127.0.0.1 10011 
+Oct 02 16:46:47.926 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-410da1e0-2893-40dc-84a8-a54c35635d7e 
+Oct 02 16:46:47.927 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 16:46:47.996 HYPERVISOR: exec_cmd: nio create_udp udp-c072cf82-034d-4065-b4f6-d18e8192df87 10014 127.0.0.1 10015 
+Oct 02 16:46:47.997 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 1 udp-c072cf82-034d-4065-b4f6-d18e8192df87 
+Oct 02 16:46:47.997 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 17:03:21.189 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 17:03:21.189 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 20:31:57.649 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Oct 02 20:31:57.698 VM: VM Ghost created.
+Oct 02 20:31:57.699 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/fabri/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Oct 02 20:31:57.699 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 02 20:31:57.700 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost '/home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips/c3725-adventerprisek9-mz.124-15.T14.image-128.ghost' 
+Oct 02 20:31:57.700 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 20:31:57.703 HYPERVISOR: exec_cmd: vm set_config R5 configs/i2_startup-config.cfg 
+Oct 02 20:31:57.703 HYPERVISOR: exec_cmd: vm start R5 
+Oct 02 20:32:28.067 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 20:32:28.316 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 20:32:38.206 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 20:32:38.206 HYPERVISOR: exec_cmd: vm stop R5 
+Oct 02 20:32:38.530 VM: VM R5 shutdown.
+Oct 02 20:32:38.536 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 20:38:19.286 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 20:38:19.287 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 20:41:59.606 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 20:41:59.630 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 20:54:04.498 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 20:54:04.498 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 20:56:45.247 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 20:56:45.247 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 20:57:00.692 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Oct 02 20:57:00.738 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 20:57:00.739 HYPERVISOR: exec_cmd: vm set_config R5 configs/i2_startup-config.cfg 
+Oct 02 20:57:00.739 HYPERVISOR: exec_cmd: vm start R5 
+Oct 02 20:57:31.100 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 20:57:31.138 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 21:00:17.903 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 21:00:17.903 HYPERVISOR: exec_cmd: vm stop R5 
+Oct 02 21:00:18.038 VM: VM R5 shutdown.
+Oct 02 21:00:18.039 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 21:01:34.779 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 21:01:34.780 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 21:04:51.206 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 21:04:51.207 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 21:06:18.326 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 21:06:18.326 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 21:06:30.953 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Oct 02 21:06:30.954 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 21:06:30.954 HYPERVISOR: exec_cmd: vm set_config R5 configs/i2_startup-config.cfg 
+Oct 02 21:06:30.955 HYPERVISOR: exec_cmd: vm start R5 
+Oct 02 21:07:01.316 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 21:07:01.318 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 21:09:31.341 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 21:09:31.544 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 21:09:33.204 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 21:09:33.212 HYPERVISOR: exec_cmd: vm stop R5 
+Oct 02 21:09:33.333 VM: VM R5 shutdown.
+Oct 02 21:09:33.333 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 21:15:09.120 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 21:15:09.126 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 21:15:59.805 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 21:15:59.806 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 02 21:19:39.477 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 02 21:19:39.478 HYPERVISOR: exec_cmd: vm extract_config R5 

@@ -1,0 +1,74 @@
+Oct 02 16:46:47.661 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Oct 02 16:46:47.661 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 45747.
+Oct 02 16:46:47.671 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 02 16:46:47.672 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips 
+Oct 02 16:46:47.672 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips
+Oct 02 16:46:47.672 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips/25b8a25d-f6d7-4d4c-8a5f-00269fa20b08 
+Oct 02 16:46:47.672 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips/25b8a25d-f6d7-4d4c-8a5f-00269fa20b08
+Oct 02 16:46:47.673 HYPERVISOR: exec_cmd: vm create R8 8 c7200 
+Oct 02 16:46:47.673 VM: VM R8 created.
+Oct 02 16:46:47.673 HYPERVISOR: exec_cmd: vm set_con_tcp_port R8 5005 
+Oct 02 16:46:47.673 HYPERVISOR: exec_cmd: c7200 get_mac_addr R8 
+Oct 02 16:46:47.674 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 16:46:47.674 HYPERVISOR: exec_cmd: vm slot_add_binding R8 0 0 C7200-IO-FE 
+Oct 02 16:46:47.675 HYPERVISOR: exec_cmd: vm set_disk0 R8 0 
+Oct 02 16:46:47.676 HYPERVISOR: exec_cmd: vm set_ios R8 /home/fabri/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image 
+Oct 02 16:46:47.676 HYPERVISOR: exec_cmd: c7200 set_mac_addr R8 ca08.1c0c.0000 
+Oct 02 16:46:47.677 HYPERVISOR: exec_cmd: vm set_nvram R8 512 
+Oct 02 16:46:47.677 HYPERVISOR: exec_cmd: vm set_ram R8 512 
+Oct 02 16:46:47.677 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 16:46:47.678 HYPERVISOR: exec_cmd: vm slot_remove_binding R8 0 0 
+Oct 02 16:46:47.678 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 16:46:47.678 HYPERVISOR: exec_cmd: vm slot_add_binding R8 0 0 C7200-IO-GE-E 
+Oct 02 16:46:47.679 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 16:46:47.679 HYPERVISOR: exec_cmd: vm slot_add_binding R8 1 0 PA-GE 
+Oct 02 16:46:47.680 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 16:46:47.680 HYPERVISOR: exec_cmd: vm slot_add_binding R8 2 0 PA-GE 
+Oct 02 16:46:47.681 HYPERVISOR: exec_cmd: vm set_con_tcp_port R8 5005 
+Oct 02 16:46:48.676 HYPERVISOR: exec_cmd: nio create_udp udp-c502af3a-a7e3-410b-bd53-0235c94ed988 10054 127.0.0.1 10055 
+Oct 02 16:46:48.699 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R8 0 0 udp-c502af3a-a7e3-410b-bd53-0235c94ed988 
+Oct 02 16:46:48.699 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 16:46:48.772 HYPERVISOR: exec_cmd: nio create_udp udp-fa8bd657-815f-4bbc-949e-d9d081e8f106 10058 127.0.0.1 10059 
+Oct 02 16:46:48.774 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R8 1 0 udp-fa8bd657-815f-4bbc-949e-d9d081e8f106 
+Oct 02 16:46:48.774 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 16:46:48.885 HYPERVISOR: exec_cmd: nio create_udp udp-646f2265-b962-46cd-ac1c-8ce4242e5b72 10062 127.0.0.1 10063 
+Oct 02 16:46:48.886 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R8 2 0 udp-646f2265-b962-46cd-ac1c-8ce4242e5b72 
+Oct 02 16:46:48.886 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 17:03:21.437 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 17:03:21.437 HYPERVISOR: exec_cmd: vm extract_config R8 
+Oct 02 20:32:17.139 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Oct 02 20:32:17.380 VM: VM Ghost created.
+Oct 02 20:32:17.381 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/fabri/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image 
+Oct 02 20:32:17.381 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 02 20:32:17.381 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost '/home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips/c7200-adventerprisek9-mz.124-24.T5.image-512.ghost' 
+Oct 02 20:32:17.382 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 20:32:17.383 HYPERVISOR: exec_cmd: vm set_config R8 configs/i8_startup-config.cfg 
+Oct 02 20:32:17.383 HYPERVISOR: exec_cmd: vm start R8 
+Oct 02 20:32:47.572 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 20:32:47.572 HYPERVISOR: exec_cmd: vm stop R8 
+Oct 02 20:32:48.302 VM: VM R8 shutdown.
+Oct 02 20:32:48.302 HYPERVISOR: exec_cmd: vm extract_config R8 
+Oct 02 20:38:19.321 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 20:38:19.321 HYPERVISOR: exec_cmd: vm extract_config R8 
+Oct 02 20:41:59.926 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 20:41:59.926 HYPERVISOR: exec_cmd: vm extract_config R8 
+Oct 02 20:54:04.755 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 20:54:04.755 HYPERVISOR: exec_cmd: vm extract_config R8 
+Oct 02 20:56:45.448 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 20:56:45.448 HYPERVISOR: exec_cmd: vm extract_config R8 
+Oct 02 21:00:18.091 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 21:00:18.092 HYPERVISOR: exec_cmd: vm extract_config R8 
+Oct 02 21:01:35.071 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 21:01:35.071 HYPERVISOR: exec_cmd: vm extract_config R8 
+Oct 02 21:04:51.511 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 21:04:51.511 HYPERVISOR: exec_cmd: vm extract_config R8 
+Oct 02 21:06:18.559 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 21:06:18.559 HYPERVISOR: exec_cmd: vm extract_config R8 
+Oct 02 21:09:33.367 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 21:09:33.367 HYPERVISOR: exec_cmd: vm extract_config R8 
+Oct 02 21:15:10.618 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 21:15:10.618 HYPERVISOR: exec_cmd: vm extract_config R8 
+Oct 02 21:16:00.061 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 21:16:00.062 HYPERVISOR: exec_cmd: vm extract_config R8 
+Oct 02 21:19:39.679 HYPERVISOR: exec_cmd: vm get_status R8 
+Oct 02 21:19:39.679 HYPERVISOR: exec_cmd: vm extract_config R8 

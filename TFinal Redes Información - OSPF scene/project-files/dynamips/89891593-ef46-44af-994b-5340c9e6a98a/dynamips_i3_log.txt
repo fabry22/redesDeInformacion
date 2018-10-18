@@ -1,0 +1,32 @@
+Sep 18 00:48:08.932 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Sep 18 00:48:08.932 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 43997.
+Sep 18 00:48:08.943 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 18 00:48:08.943 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips 
+Sep 18 00:48:08.943 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips
+Sep 18 00:48:08.943 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips/aeeab42a-11ad-4017-aca5-b519b924096f 
+Sep 18 00:48:08.943 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información - OSPF scene/project-files/dynamips/aeeab42a-11ad-4017-aca5-b519b924096f
+Sep 18 00:48:08.944 HYPERVISOR: exec_cmd: vm create R7 4 c3725 
+Sep 18 00:48:08.966 VM: VM R7 created.
+Sep 18 00:48:08.967 HYPERVISOR: exec_cmd: vm set_con_tcp_port R7 5033 
+Sep 18 00:48:08.968 HYPERVISOR: exec_cmd: c3725 get_mac_addr R7 
+Sep 18 00:48:08.969 HYPERVISOR: exec_cmd: vm set_disk0 R7 0 
+Sep 18 00:48:08.970 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 18 00:48:08.970 HYPERVISOR: exec_cmd: vm set_idle_pc R7 0x60c09aa0 
+Sep 18 00:48:08.972 HYPERVISOR: exec_cmd: vm set_ios R7 /home/fabri/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Sep 18 00:48:08.972 HYPERVISOR: exec_cmd: c3725 set_mac_addr R7 c204.1ff1.0000 
+Sep 18 00:48:08.972 HYPERVISOR: exec_cmd: vm set_nvram R7 256 
+Sep 18 00:48:09.599 HYPERVISOR: exec_cmd: nio create_udp udp-424c653a-f29d-438b-bc8f-ac26fea1aa44 10024 127.0.0.1 10025 
+Sep 18 00:48:09.624 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 0 udp-424c653a-f29d-438b-bc8f-ac26fea1aa44 
+Sep 18 00:48:09.624 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 18 00:48:09.773 HYPERVISOR: exec_cmd: nio create_udp udp-953d9b66-dc2c-474e-b3f7-5584845ed4fb 10030 127.0.0.1 10031 
+Sep 18 00:48:09.775 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 1 udp-953d9b66-dc2c-474e-b3f7-5584845ed4fb 
+Sep 18 00:48:09.775 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 18 02:20:52.596 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 18 02:20:52.597 HYPERVISOR: exec_cmd: vm extract_config R7 
+Sep 18 02:21:01.134 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 18 02:21:01.135 HYPERVISOR: exec_cmd: vm extract_config R7 
+Sep 18 02:21:01.137 HYPERVISOR: exec_cmd: vm delete R7 
+Sep 18 02:21:01.137 VM: VM R7 destroyed.
+Sep 18 02:21:01.205 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 18 02:21:01.422 HYPERVISOR: Stopped.
+Sep 18 02:21:01.422 GENERAL: reset done.

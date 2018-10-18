@@ -1,0 +1,63 @@
+Oct 02 16:46:47.386 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Oct 02 16:46:47.386 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 47427.
+Oct 02 16:46:47.396 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 02 16:46:47.397 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips 
+Oct 02 16:46:47.397 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips
+Oct 02 16:46:47.397 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips/5a92298f-08ef-412d-9d82-9be4937e47c2 
+Oct 02 16:46:47.397 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips/5a92298f-08ef-412d-9d82-9be4937e47c2
+Oct 02 16:46:47.397 HYPERVISOR: exec_cmd: vm create R7 4 c3725 
+Oct 02 16:46:47.398 VM: VM R7 created.
+Oct 02 16:46:47.398 HYPERVISOR: exec_cmd: vm set_con_tcp_port R7 5033 
+Oct 02 16:46:47.398 HYPERVISOR: exec_cmd: c3725 get_mac_addr R7 
+Oct 02 16:46:47.399 HYPERVISOR: exec_cmd: vm set_disk0 R7 0 
+Oct 02 16:46:47.399 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 16:46:47.400 HYPERVISOR: exec_cmd: vm set_idle_pc R7 0x60c09aa0 
+Oct 02 16:46:47.401 HYPERVISOR: exec_cmd: vm set_ios R7 /home/fabri/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Oct 02 16:46:47.401 HYPERVISOR: exec_cmd: c3725 set_mac_addr R7 c204.1ff1.0000 
+Oct 02 16:46:47.402 HYPERVISOR: exec_cmd: vm set_nvram R7 256 
+Oct 02 16:46:48.008 HYPERVISOR: exec_cmd: nio create_udp udp-d4988ef1-f78d-4f66-a2ca-cf89ab261a5b 10016 127.0.0.1 10017 
+Oct 02 16:46:48.031 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 0 udp-d4988ef1-f78d-4f66-a2ca-cf89ab261a5b 
+Oct 02 16:46:48.032 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 16:46:48.594 HYPERVISOR: exec_cmd: nio create_udp udp-e7e06b28-f164-4c65-9619-2d897b43e009 10048 127.0.0.1 10049 
+Oct 02 16:46:48.596 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 1 udp-e7e06b28-f164-4c65-9619-2d897b43e009 
+Oct 02 16:46:48.596 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 17:03:21.195 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 17:03:21.204 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 02 20:31:58.071 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Oct 02 20:31:58.152 VM: VM Ghost created.
+Oct 02 20:31:58.153 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/fabri/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Oct 02 20:31:58.153 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 02 20:31:58.154 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost '/home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips/c3725-adventerprisek9-mz.124-15.T14.image-128.ghost' 
+Oct 02 20:31:58.154 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 20:31:58.231 HYPERVISOR: exec_cmd: vm set_config R7 configs/i4_startup-config.cfg 
+Oct 02 20:31:58.231 HYPERVISOR: exec_cmd: vm start R7 
+Oct 02 20:32:28.799 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 02 20:32:29.769 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 02 20:32:38.542 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 20:32:38.542 HYPERVISOR: exec_cmd: vm stop R7 
+Oct 02 20:32:41.493 VM: VM R7 shutdown.
+Oct 02 20:32:41.495 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 02 20:38:19.293 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 20:38:19.294 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 02 20:41:59.641 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 20:41:59.647 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 02 20:54:04.504 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 20:54:04.505 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 02 20:56:45.254 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 20:56:45.254 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 02 21:00:18.050 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 21:00:18.051 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 02 21:01:34.787 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 21:01:34.787 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 02 21:04:51.240 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 21:04:51.241 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 02 21:06:18.331 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 21:06:18.331 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 02 21:09:33.338 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 21:09:33.339 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 02 21:15:09.146 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 21:15:09.146 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 02 21:15:59.812 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 21:15:59.813 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 02 21:19:39.486 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 02 21:19:39.486 HYPERVISOR: exec_cmd: vm extract_config R7 

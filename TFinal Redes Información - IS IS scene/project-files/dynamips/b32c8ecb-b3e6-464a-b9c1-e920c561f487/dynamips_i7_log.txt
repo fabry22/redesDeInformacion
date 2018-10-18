@@ -1,0 +1,88 @@
+Oct 02 16:46:47.618 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Oct 02 16:46:47.618 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 37399.
+Oct 02 16:46:47.629 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 02 16:46:47.629 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips 
+Oct 02 16:46:47.629 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips
+Oct 02 16:46:47.630 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips/b32c8ecb-b3e6-464a-b9c1-e920c561f487 
+Oct 02 16:46:47.630 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips/b32c8ecb-b3e6-464a-b9c1-e920c561f487
+Oct 02 16:46:47.630 HYPERVISOR: exec_cmd: vm create R6 7 c7200 
+Oct 02 16:46:47.630 VM: VM R6 created.
+Oct 02 16:46:47.631 HYPERVISOR: exec_cmd: vm set_con_tcp_port R6 5004 
+Oct 02 16:46:47.631 HYPERVISOR: exec_cmd: c7200 get_mac_addr R6 
+Oct 02 16:46:47.631 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 16:46:47.632 HYPERVISOR: exec_cmd: vm slot_add_binding R6 0 0 C7200-IO-FE 
+Oct 02 16:46:47.632 HYPERVISOR: exec_cmd: vm set_disk0 R6 0 
+Oct 02 16:46:47.633 HYPERVISOR: exec_cmd: vm set_ios R6 /home/fabri/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image 
+Oct 02 16:46:47.634 HYPERVISOR: exec_cmd: c7200 set_mac_addr R6 ca07.1ba1.0000 
+Oct 02 16:46:47.634 HYPERVISOR: exec_cmd: vm set_nvram R6 512 
+Oct 02 16:46:47.635 HYPERVISOR: exec_cmd: vm set_ram R6 512 
+Oct 02 16:46:47.635 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 16:46:47.635 HYPERVISOR: exec_cmd: vm slot_remove_binding R6 0 0 
+Oct 02 16:46:47.636 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 16:46:47.636 HYPERVISOR: exec_cmd: vm slot_add_binding R6 0 0 C7200-IO-GE-E 
+Oct 02 16:46:47.636 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 16:46:47.636 HYPERVISOR: exec_cmd: vm slot_add_binding R6 1 0 PA-GE 
+Oct 02 16:46:47.637 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 16:46:47.637 HYPERVISOR: exec_cmd: vm slot_add_binding R6 2 0 PA-GE 
+Oct 02 16:46:47.638 HYPERVISOR: exec_cmd: vm set_con_tcp_port R6 5004 
+Oct 02 16:46:48.484 HYPERVISOR: exec_cmd: nio create_udp udp-1ed6ae11-8d2d-4966-924f-d3291b92c039 10042 127.0.0.1 10043 
+Oct 02 16:46:48.507 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 0 udp-1ed6ae11-8d2d-4966-924f-d3291b92c039 
+Oct 02 16:46:48.508 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 16:46:48.581 HYPERVISOR: exec_cmd: nio create_udp udp-ac2cce92-0b03-4673-92d3-07df27dd21ce 10046 127.0.0.1 10047 
+Oct 02 16:46:48.582 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 1 0 udp-ac2cce92-0b03-4673-92d3-07df27dd21ce 
+Oct 02 16:46:48.582 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 16:46:48.663 HYPERVISOR: exec_cmd: nio create_udp udp-a91d3e11-d77b-4c48-b990-38ed04dd5d1c 10052 127.0.0.1 10053 
+Oct 02 16:46:48.665 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 2 0 udp-a91d3e11-d77b-4c48-b990-38ed04dd5d1c 
+Oct 02 16:46:48.665 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 17:03:21.434 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 17:03:21.434 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 02 20:32:16.967 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Oct 02 20:32:17.128 VM: VM Ghost created.
+Oct 02 20:32:17.128 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/fabri/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image 
+Oct 02 20:32:17.137 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 02 20:32:17.138 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost '/home/fabri/GNS3/projects/TFinal Redes Información - IS IS scene/project-files/dynamips/c7200-adventerprisek9-mz.124-24.T5.image-512.ghost' 
+Oct 02 20:32:17.138 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 20:32:17.140 HYPERVISOR: exec_cmd: vm set_config R6 configs/i7_startup-config.cfg 
+Oct 02 20:32:17.141 HYPERVISOR: exec_cmd: vm start R6 
+Oct 02 20:32:47.314 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 20:32:47.398 HYPERVISOR: exec_cmd: vm stop R6 
+Oct 02 20:32:47.566 VM: VM R6 shutdown.
+Oct 02 20:32:47.567 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 02 20:38:19.316 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 20:38:19.316 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 02 20:41:59.919 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 20:41:59.919 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 02 20:54:04.751 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 20:54:04.751 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 02 20:56:45.441 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 20:56:45.442 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 02 21:00:18.083 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 21:00:18.084 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 02 21:01:03.260 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Oct 02 21:01:03.261 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 21:01:03.262 HYPERVISOR: exec_cmd: vm set_config R6 configs/i7_startup-config.cfg 
+Oct 02 21:01:03.262 HYPERVISOR: exec_cmd: vm start R6 
+Oct 02 21:01:33.593 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 02 21:01:34.817 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 21:01:34.817 HYPERVISOR: exec_cmd: vm stop R6 
+Oct 02 21:01:35.063 VM: VM R6 shutdown.
+Oct 02 21:01:35.063 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 02 21:04:51.507 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 21:04:51.507 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 02 21:06:18.554 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 21:06:18.555 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 02 21:09:33.363 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 21:09:33.363 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 02 21:15:10.610 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 21:15:10.611 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 02 21:15:20.828 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Oct 02 21:15:20.829 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 21:15:20.830 HYPERVISOR: exec_cmd: vm set_config R6 configs/i7_startup-config.cfg 
+Oct 02 21:15:20.830 HYPERVISOR: exec_cmd: vm start R6 
+Oct 02 21:15:51.158 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 02 21:15:59.842 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 21:15:59.843 HYPERVISOR: exec_cmd: vm stop R6 
+Oct 02 21:16:00.053 VM: VM R6 shutdown.
+Oct 02 21:16:00.054 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 02 21:19:39.672 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 02 21:19:39.673 HYPERVISOR: exec_cmd: vm extract_config R6 

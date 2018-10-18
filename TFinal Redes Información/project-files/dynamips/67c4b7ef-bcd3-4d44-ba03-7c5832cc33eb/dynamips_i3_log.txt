@@ -1,0 +1,46 @@
+Sep 13 23:25:40.894 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Sep 13 23:25:40.895 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57727.
+Sep 13 23:25:40.905 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 13 23:25:40.905 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información/project-files/dynamips 
+Sep 13 23:25:40.905 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información/project-files/dynamips
+Sep 13 23:25:40.906 HYPERVISOR: exec_cmd: hypervisor working_dir /home/fabri/GNS3/projects/TFinal Redes Información/project-files/dynamips/5fcd28b6-66b1-4fb9-8a20-0417676b0bbd 
+Sep 13 23:25:40.906 GENERAL: working_dir=/home/fabri/GNS3/projects/TFinal Redes Información/project-files/dynamips/5fcd28b6-66b1-4fb9-8a20-0417676b0bbd
+Sep 13 23:25:40.906 HYPERVISOR: exec_cmd: vm create R7 4 c3725 
+Sep 13 23:25:40.906 VM: VM R7 created.
+Sep 13 23:25:40.907 HYPERVISOR: exec_cmd: vm set_con_tcp_port R7 5016 
+Sep 13 23:25:40.907 HYPERVISOR: exec_cmd: c3725 get_mac_addr R7 
+Sep 13 23:25:40.907 HYPERVISOR: exec_cmd: vm set_disk0 R7 0 
+Sep 13 23:25:40.908 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 13 23:25:40.908 HYPERVISOR: exec_cmd: vm set_idle_pc R7 0x60c09aa0 
+Sep 13 23:25:40.909 HYPERVISOR: exec_cmd: vm set_ios R7 /home/fabri/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Sep 13 23:25:40.910 HYPERVISOR: exec_cmd: c3725 set_mac_addr R7 c204.1ff1.0000 
+Sep 13 23:25:40.910 HYPERVISOR: exec_cmd: vm set_nvram R7 256 
+Sep 13 23:25:41.410 HYPERVISOR: exec_cmd: nio create_udp udp-4a6803e0-6a5a-4007-97c0-d322920aa4c3 10024 127.0.0.1 10025 
+Sep 13 23:25:41.432 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 0 udp-4a6803e0-6a5a-4007-97c0-d322920aa4c3 
+Sep 13 23:25:41.433 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 13 23:25:41.579 HYPERVISOR: exec_cmd: nio create_udp udp-64362bb5-2fd8-4905-a187-9c0b1e7b6d15 10030 127.0.0.1 10031 
+Sep 13 23:25:41.581 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 1 udp-64362bb5-2fd8-4905-a187-9c0b1e7b6d15 
+Sep 13 23:25:41.581 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 13 23:31:38.637 HYPERVISOR: exec_cmd: vm set_ios R7 /home/fabri/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Sep 14 01:31:36.325 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 14 01:31:36.326 HYPERVISOR: exec_cmd: vm extract_config R7 
+Sep 14 01:41:30.224 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 14 01:41:30.224 HYPERVISOR: exec_cmd: vm extract_config R7 
+Sep 14 01:47:28.855 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 14 01:47:28.856 HYPERVISOR: exec_cmd: vm extract_config R7 
+Sep 14 01:50:07.738 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Sep 14 01:50:07.739 VM: VM Ghost created.
+Sep 14 01:50:07.739 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/fabri/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Sep 14 01:50:07.739 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Sep 14 01:50:07.740 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost '/home/fabri/GNS3/projects/TFinal Redes Información/project-files/dynamips/c3725-adventerprisek9-mz.124-15.T14.image-128.ghost' 
+Sep 14 01:50:07.740 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 14 01:50:07.741 HYPERVISOR: exec_cmd: vm set_config R7 configs/i4_startup-config.cfg 
+Sep 14 01:50:07.741 HYPERVISOR: exec_cmd: vm start R7 
+Sep 14 01:50:38.120 HYPERVISOR: exec_cmd: vm extract_config R7 
+Sep 14 01:50:38.168 HYPERVISOR: exec_cmd: vm extract_config R7 
+Sep 14 01:52:26.809 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 14 01:52:26.809 HYPERVISOR: exec_cmd: vm stop R7 
+Sep 14 01:52:26.928 VM: VM R7 shutdown.
+Sep 14 01:52:26.928 HYPERVISOR: exec_cmd: vm extract_config R7 
+Sep 14 02:28:17.575 HYPERVISOR: exec_cmd: vm get_status R7 
+Sep 14 02:28:17.617 HYPERVISOR: exec_cmd: vm extract_config R7 
